@@ -13,7 +13,7 @@ const IndexPage = () => (
         <p>Easylink is your best partner<br/> to make your services and products visible</p>
         <div className="ButtonGroup">
           <div className="HeroButton1">Learn More</div>
-          <div className="HeroButton2">Get Started</div>
+          <Link to='/'><div className="HeroButton2">Get Started</div></Link>
         </div>
       </div>
       <StaticImage
@@ -28,8 +28,7 @@ const IndexPage = () => (
         style={{ marginBottom: `1.45rem` }}
       />
     </div>
-    <div data-sal="fade-in"
-    data-sal-duration="2000" className="Cards">
+    <div data-sal="fade-in" data-sal-duration="2000" className="Cards">
         <div className='Card'>
           <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M7 3h10a4 4 0 110 8H7a4 4 0 110-8zm0 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA"></path><path d="M7 13h10a4 4 0 110 8H7a4 4 0 110-8zm10 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA" opacity=".3"></path></g></svg>
           <h3>Services</h3>
@@ -46,6 +45,9 @@ const IndexPage = () => (
           <p>Customers can easily reserve their service on their favorite time and date that is available</p>
         </div>
     </div>
+    <section className='section'>
+      <h1>Section 3 Coming Soon🔨</h1>
+    </section>
   </Layout>
 )
 
