@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Logo from "../components/Logo"
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +14,7 @@ const IndexPage = () => (
         <p>Easylink is your best partner<br/> to make your services and products visible</p>
         <div className="ButtonGroup">
           <div className="HeroButton1">Learn More</div>
-          <Link to='/'><div className="HeroButton2">Get Started</div></Link>
+          <Link to='/Login'><div className="HeroButton2">Get Started</div></Link>
         </div>
       </div>
       <StaticImage
@@ -47,6 +48,7 @@ const IndexPage = () => (
     </div>
     <section className='section'>
       <h1>Section 3 Coming Soon🔨</h1>
+      <Logo/>
     </section>
   </Layout>
 )

@@ -24,12 +24,11 @@
 .Link {
     padding: 12px 8px;
 }
+
 .Logo {
-  color: black !important;
-  font-weight: 600;
-  font-size: 22px;
-  cursor: pointer;
+  width: 7.5vw;
 }
+
 .LoginBox {
     padding: 12px 50px;
 }
