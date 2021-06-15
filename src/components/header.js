@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
         <Link className="Link">About Us</Link>
         <Link className="Link">Our Customers</Link>
       </div>
-      <div className='LoginBox'><Link to='/login'className='Login'>Login</Link></div>
+      <div className='LoginBox'><Link to='/Login'className='Login'>Login</Link></div>
     </div>
   </header>
 )

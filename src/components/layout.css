@@ -5,13 +5,20 @@ html {
   -webkit-text-size-adjust: 100%;
   font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   letter-spacing: -0.6px;
-  box-sizing: border-box;
   overflow-y: scroll;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.body button {
+  border: none;
 }
 
 
@@ -96,7 +103,6 @@ body {
   animation-delay: 0.7s;
 }
 
-
 @keyframes HeroAnimation {
   0% {
     opacity: 0;
@@ -114,6 +120,7 @@ body {
   justify-content: space-evenly;
   width: 85vw;
   padding-left: 5%;
+  height: 50vh;
 }
 
 .Card {
@@ -126,6 +133,7 @@ body {
 .Card svg {
   height: 3em;
   width: 3em;
+  color: #335eea;
 }
 
 .Card h3 {
@@ -139,12 +147,108 @@ body {
   line-height: 27.2px;
   color: #869ab8;
 }
-.section {
+
+.Card:hover {
+  height: 25vh;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: white;
+  border-radius: 15px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.whysection {
   height: 100vh;
-  text-align: center;
-  line-height: 100vh;
-  font-size: 3vw;
-  font-weight: 800;
+  border-bottom: 5px black;
+  width: 100vw;
+}
+
+.why {
+  padding-top: 20vh;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whygroup h3 {
+  font-size: 40px;
+  display: block;
+  margin: unset;
+  font-weight: 700;
+}
+
+.whygroup h3:hover {
+  color: #335eea;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.whygroup h4 {
+  font-size: 20px;
+  margin: unset;
+  font-weight: 500;
+}
+
+.whygroup p {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #869ab8;
+}
+.features {
+  padding-top: 10px;
+  display: grid; 
+  grid-template-columns: 0.7fr 1fr; 
+  grid-template-rows: repeat(3, 1fr); 
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; 
+}
+
+.feature {
+  gap: 15px;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  color: #869ab8;
+  background-color: #335eea10;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.feature:hover {
+  color: #335eea;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+
+@media (max-width: 800px) {
+  .HeroImage {
+    display: none;
+  }
+  .HeroGroup {
+    text-align: center;
+    justify-content: center;
+  }
+  .ButtonGroup {
+    justify-content: center;
+  }
+  .Cards {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .Card {
+    width: 50vw;
+  }
+  .Hero {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   
 }
 
 
